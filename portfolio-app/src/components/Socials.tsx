@@ -8,7 +8,7 @@ const Socials = () => {
       <div className="flex flex-row items-center gap-3 transition-all duration-300 lg:flex-col lg:items-end lg:gap-4">
         {/* GitHub */}
         <a 
-          href="https://github.com/yourusername" 
+          href="https://github.com/Mykel-Az" 
           target="_blank"
           rel="noopener noreferrer"
           className="p-4 rounded-full bg-white border border-gray-200 hover:bg-purple-100 transition-all duration-300 shadow-lg hover:scale-105"
@@ -19,7 +19,7 @@ const Socials = () => {
         
         {/* LinkedIn */}
         <a 
-          href="https://linkedin.com/in/yourusername" 
+          href="https://linkedin.com/in/michael-azeez-adekanmbi-968b70267" 
           target="_blank"
           rel="noopener noreferrer"
           className="p-4 rounded-full bg-white border border-gray-200 hover:bg-purple-100 transition-all duration-300 shadow-lg hover:scale-105"
@@ -30,7 +30,7 @@ const Socials = () => {
         
         {/* Twitter */}
         <a 
-          href="https://twitter.com/yourusername" 
+          href="https://x.com/Michael_Azed" 
           target="_blank"
           rel="noopener noreferrer"
           className="p-4 rounded-full bg-white border border-gray-200 hover:bg-purple-100 transition-all duration-300 shadow-lg hover:scale-105"
@@ -50,7 +50,7 @@ const Socials = () => {
         
         {/* CV Button - Now Bigger */}
         <a
-          href="https://docs.google.com/document/your-cv-link"
+          href="https://docs.google.com/document/d/1PGBwPnyWuggefOWAypqsSBpbThAQ2PMvko92uo3bhfM/edit?tab=t.0"
           target="_blank"
           rel="noopener noreferrer"
           className="px-5 py-3 rounded-lg bg-gradient-to-r from-purple-600 to-amber-500 text-white font-medium hover:opacity-90 transition-all duration-300 flex items-center gap-2 shadow-lg hover:scale-105"
