@@ -1,19 +1,16 @@
-import Layout from "./components/Layout";
-import Hero from "./components/Hero";
-import Socials from "./components/Socials";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import Footer from "./components/Footer";
+import { Routes, Route } from 'react-router-dom';
+import Portfolio from './pages/portfolio';
+import NotFound from './pages/404';
+// import ServerError from './pages/500';
 
 function App() {
   return (
-    <Layout>
-      <Socials />
-      <Hero />
-      <Skills />
-      <Projects />
-      <Footer />
-    </Layout>
+    <Routes>
+      <Route path="/portfolio" element={<Portfolio />} />
+      
+      {/* 404 fallback */}
+      <Route path="*" element={<NotFound />} />
+    </Routes>
   );
 }
 
