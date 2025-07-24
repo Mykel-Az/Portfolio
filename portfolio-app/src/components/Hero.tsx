@@ -42,7 +42,7 @@ function Hero() {
       y: 0,
       transition: { 
         duration: 0.8,
-        ease: "easeInOut" as const // use supported string value
+        ease: "easeInOut" as const
       }
     },
     exit: { 
@@ -50,7 +50,7 @@ function Hero() {
       y: -15,
       transition: {
         duration: 0.6,
-        ease: "easeIn" as const // use supported string value
+        ease: "easeIn" as const
       }
     }
   };
@@ -63,16 +63,16 @@ function Hero() {
       transition: {
         delay: 0.3,
         duration: 1,
-        ease: "easeInOut"
+        ease: "easeInOut" as const
       }
     }
-  } as const; // Fix for TypeScript error
+  };
 
   return (
-    <section className="py-20 min-h-[60vh] flex items-center">
-      <div className="max-w-4xl mx-auto relative w-full px-4">
+    <section className="py-20 min-h-[40vh] flex items-center">
+      <div className="max-w-4xl relative w-full px-4">
         
-        {/* Animated Secondary Content */}
+        {/* Animated Secondary Content*/}
         <AnimatePresence mode="wait">
           {animationStage < 4 && (
             <motion.div
@@ -83,7 +83,7 @@ function Hero() {
               exit="exit"
               variants={container}
             >
-              {/* Welcome - shows longer */}
+              {/* Welcome */}
               {animationStage >= 1 && (
                 <motion.h1 
                   className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-amber-500 bg-clip-text text-transparent"
@@ -93,7 +93,7 @@ function Hero() {
                 </motion.h1>
               )}
 
-              {/* Portfolio title - shows longer */}
+              {/* Portfolio title */}
               {animationStage >= 2 && (
                 <motion.h2 
                   className="text-3xl font-bold text-purple-700 mb-6"
@@ -108,15 +108,15 @@ function Hero() {
 
         {/* Major Lines */}
         <motion.div 
-          className="text-left"
+          className="text-center md:text-left"
           variants={majorLinesVariants}
           initial="hidden"
           animate={animationStage >= 4 ? "show" : "hidden"}
         >
-          <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold leading-tight">
+          <h1 className="text-4xl md:text-5xl font-bold leading-tight">
             <span className="text-gray-600">Hi, I'm</span> Michael Azeez-Adekanmbi
           </h1>
-          <h2 className="text-3xl md:text-3xl lg:text-4xl text-amber-600 font-medium mt-2">
+          <h2 className="text-3xl md:text-4xl text-amber-600 font-medium mt-2">
             Software Engineer
           </h2>
         </motion.div>

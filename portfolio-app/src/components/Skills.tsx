@@ -38,14 +38,14 @@ const Skills = () => {
   return (
     <section className="py-12 px-4 bg-gradient-to-br from-purple-50/30 to-amber-50/30">
       <div className="max-w-6xl mx-auto">
-        <div className="text-left">
-          <h2 className="text-3xl font-bold text-purple-700 mb-2">
+        <div className="text-left md:text-left">
+          <h2 className="text-3xl font-bold text-purple-700 mb-2 text-center md:text-left">
             Skills & Tools
           </h2>
-          <hr className="border-t-2 border-amber-500 w-40 mb-8" />
+          <hr className="border-t-2 border-amber-500 w-40 mb-8 mx-auto md:mx-0" />
         </div>
         
-        <div className="flex flex-wrap gap-3">
+        <div className="flex flex-wrap justify-center md:justify-start gap-3">
           {skills.map((skill) => (
             <div
               key={skill.name}
