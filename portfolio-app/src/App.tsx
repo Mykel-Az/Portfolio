@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import Portfolio from './pages/portfolio';
+import Portfolio from './pages/Portfolio';
 import NotFound from './pages/404';
 // import ServerError from './pages/500';
 
