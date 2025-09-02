@@ -38,9 +38,8 @@ const projects = [
     image: bdsImage,
     link: "https://bluediamondsolutions.org/"
   },
-
   {
-    name: "Mecrchant Visualizer",
+    name: "Merch-Visualizer",
     description: "A web-based 2D product visualizer that allows users to customize and view products in real-time.",
     tools: ["React", "TypeScript", "Tailwind"],
     image: bdsImage,
