@@ -1,8 +1,16 @@
 import { FiExternalLink } from 'react-icons/fi';
 import retailboxImage from '../assets/images/retailbox.aa6be396.jpg';
 import bdsImage from '../assets/images/Bds-image.png';
+import cfImage from '../assets/images/Cafe-fausse.png';
 
 const projects = [
+  {
+    name: "Cafe Fausse",
+    description: "A full-stack restaurant reservation system with customer validation, real-time availability checks, and booking management.",
+    tools: ["React", "Flask", "PostgreSQL"],
+    image: cfImage,
+    link: "https://cafe-fausse-frontend-czxd.onrender.com"
+  },
   {
     name: "RetailBox Website",
     description: "A complete retail system designed to meet the needs of all business sizes.",
@@ -33,7 +41,7 @@ const projects = [
   },
   {
     name: "BlueDiamond Solutions",
-    description: "Providing IT soutions and more to business and individuals, helpining them leverage technolory for Scalability and efficiency",
+    description: "A corporate website with structured service pages, project showcases, contact forms, and consultation booking integration.",
     tools: ["Python", "Django", "Tailwind", "Cloudinary", "Render"],
     image: bdsImage,
     link: "https://bluediamondsolutions.org/"
