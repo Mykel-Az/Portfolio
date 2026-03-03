@@ -9,8 +9,18 @@ const projects = [
     description: "A full-stack restaurant reservation system with customer validation, real-time availability checks, and booking management.",
     tools: ["React", "Flask", "PostgreSQL"],
     image: cfImage,
-    link: "https://cafe-fausse-frontend-czxd.onrender.com"
+    link: "https://cafefausseplace.vercel.app"
   },
+
+  {
+    name: "Cafe Fausse Admin portal",
+    description: "A Simple basic admin portal for staffs and admin (username and password: staff)",
+    tools: ["React", "Flask", "PostgreSQL"],
+    image: cfImage,
+    link: "https://cafefausseplace.vercel.app/admin"
+  },
+
+  
   {
     name: "RetailBox Website",
     description: "A complete retail system designed to meet the needs of all business sizes.",
