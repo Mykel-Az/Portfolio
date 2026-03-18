@@ -8,7 +8,7 @@ export interface Project {
   problem: string;
   role: string;
   architecture: string;
-  screenshot?: string; 
+  screenshot?: string; // path relative to /public, e.g. "/images/retailbox-app.png"
 }
 
 const projects: Project[] = [
@@ -29,7 +29,7 @@ const projects: Project[] = [
       "I worked as a fullstack engineer, owning both the frontend application and the backend API layer. On the frontend I architected the React + TypeScript app structure, built the POS interface, inventory views, and customer management flows.\n\nOn the backend I designed the core business logic, database schema, and REST API endpoints. I also set up the Docker configuration that kept local and production environments consistent.",
     architecture:
       "The frontend is a React + TypeScript SPA styled with Tailwind CSS. State is managed with React context and custom hooks — no heavy state library needed.\n\nThe backend is a Python service containerised with Docker. PostgreSQL is the database, designed with a multi-tenant schema so each business gets isolated data without separate database instances.",
-    screenshot: "/Portfolio/images/retailbox_app.png"
+    screenshot: "/images/retailbox_app.png"
   },
   {
     id: "retailbox-engine",
@@ -47,7 +47,7 @@ const projects: Project[] = [
       "I designed and built the Engine API from scratch using Django REST Framework. My responsibilities covered data model design, endpoint architecture, the authentication and permissions layer, and documentation setup.\n\nI also maintained the Postman collection and configured Swagger docs to make the API self-serve for integration work.",
     architecture:
       "Built on Django REST Framework with PostgreSQL. Endpoints are organised by resource domain with consistent response shapes and error codes throughout.\n\nAuthentication uses token-based auth with scoped permissions — staff tokens carry different access levels than admin tokens. Swagger docs are auto-generated via drf-spectacular, keeping documentation always in sync with the actual API.",
-    screenshot: "/Portfolio/images/retailbox_engine.png"
+    screenshot: "/images/retailbox_engine.png"
   },
   {
     id: "cafe-fausse",
@@ -66,7 +66,7 @@ const projects: Project[] = [
       "I built the entire system end-to-end — both the customer-facing booking flow and the staff admin portal. This covered the React frontend, Flask API, PostgreSQL schema, and deployment.",
     architecture:
       "The frontend is a React SPA with two distinct route groups: the public booking flow and a password-protected staff portal.\n\nThe backend is a lightweight Flask API handling booking creation, availability queries, and admin operations. Availability is computed in real time from existing bookings and configurable table capacity — no static slot system.",
-    screenshot: "/Portfolio/images/cafe_fausse.png"
+    screenshot: "/images/cafe_fausse.png"
   },
   {
     id: "bluediamond",
@@ -84,7 +84,7 @@ const projects: Project[] = [
       "I was the sole developer, handling everything from architecture to deployment: Django backend, Tailwind-styled templates, Cloudinary media integration, and contact and booking forms.",
     architecture:
       "A server-rendered Django application using Django's template engine — a deliberate choice over a decoupled SPA for a content-heavy site.\n\nContent is managed through Django's built-in admin interface. Media files are stored and served via Cloudinary, keeping the deployment server lightweight. The booking form triggers an email notification on new submissions.",
-    screenshot: "/Portfolio/images/bds.png"
+    screenshot: "/images/bds.png"
   },
   // {
   //   id: "merch-visualizer",
@@ -123,7 +123,7 @@ const projects: Project[] = [
       "I built the Storefront as a Next.js application pulling product and business data from the RetailBox Engine API — covering page architecture, data fetching, product listing and detail views, and the cart flow.",
     architecture:
       "A Next.js app using server-side rendering for product pages, ensuring catalogue data is always fresh and pages are indexable by search engines.\n\nProduct data is fetched from the Engine API at request time, scoped to the specific business via subdomain. The cart is managed client-side with React context. Tailwind CSS provides a neutral design so the storefront suits any type of retail business.",
-    screenshot: "/Portfolio/images/retailbox-storefront.png"
+    screenshot: "/images/retailbox-storefront.png"
   },
 ];
 

@@ -27,7 +27,7 @@ export default function NotFound() {
       </p>
 
       <Link
-        to="/portfolio"
+        to="/"
         className="inline-flex items-center gap-2 px-5 py-[11px] bg-[#00d4ff] text-black text-[12px] tracking-[0.06em] uppercase no-underline transition-all duration-200 hover:bg-[#2ddeff]"
         style={{ fontFamily: 'var(--font-mono)' }}
       >

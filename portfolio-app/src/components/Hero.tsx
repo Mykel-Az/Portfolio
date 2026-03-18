@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
 
-
-const AVATAR_SRC: string | null = null;
+// Set this to your photo path when ready, e.g. "/images/michael.jpg"
+// Leave as null to hide the avatar slot in production
+const AVATAR_SRC: string | null = "/images/Az.jpeg";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },

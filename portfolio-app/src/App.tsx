@@ -7,7 +7,6 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Portfolio />} />
-      <Route path="/portfolio" element={<Portfolio />} />
       <Route path="/500" element={<ServerError />} />
       <Route path="*" element={<NotFound />} />
     </Routes>

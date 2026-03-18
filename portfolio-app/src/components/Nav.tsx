@@ -9,7 +9,7 @@ export default function Nav() {
       <div className="max-w-4xl mx-auto px-6 h-14 flex items-center justify-between">
 
         <Link
-          to="/portfolio"
+          to="/"
           className="font-['Instrument_Serif'] italic text-[17px] text-[#edebe6] no-underline tracking-[-0.01em]"
         >
           Michael{' '}

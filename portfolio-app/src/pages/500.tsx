@@ -35,7 +35,7 @@ export default function ServerError() {
           Refresh page
         </button>
         <Link
-          to="/portfolio"
+          to="/"
           className="inline-flex items-center gap-2 px-5 py-[10px] text-[#c4c2bc] text-[12px] tracking-[0.06em] uppercase no-underline border border-white/[0.13] transition-all duration-200 hover:border-[#00d4ff]/40 hover:text-[#edebe6] hover:bg-[#00d4ff]/[0.07]"
           style={{ fontFamily: 'var(--font-mono)' }}
         >
