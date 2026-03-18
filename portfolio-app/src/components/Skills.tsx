@@ -1,60 +1,59 @@
-import {
-  SiPython,
-  SiReact,
-  SiNodedotjs, 
-  SiTypescript, 
-  SiTailwindcss, 
-  SiDjango, 
-  SiPostgresql, 
-  SiJavascript,
-  SiNextdotjs,
-  SiFastapi,
-  SiMysql,
-  SiAmazon,
-  SiDocker,
-  SiGit,
-  SiPostman
-} from 'react-icons/si';
-
-const skills = [
-  { name: "React", icon: <SiReact className="text-amber-500" /> },
-  { name: "TypeScript", icon: <SiTypescript className="text-amber-500" /> },
-  { name: "Tailwind", icon: <SiTailwindcss className="text-amber-500" /> },
-  { name: "Node.js", icon: <SiNodedotjs className="text-amber-500" /> },
-  { name: "Django", icon: <SiDjango className="text-amber-500" /> },
-  { name: "PostgreSQL", icon: <SiPostgresql className="text-amber-500" /> },
-  { name: "JavaScript", icon: <SiJavascript className="text-amber-500" /> },
-  { name: "Python", icon: <SiPython className="text-amber-500" /> },
-  { name: "NextJs", icon: <SiNextdotjs className="text-amber-500" /> },
-  { name: "FastApi", icon: <SiFastapi className="text-amber-500" /> },
-  { name: "MySQL", icon: <SiMysql className="text-amber-500" /> },
-  { name: "AWS", icon: <SiAmazon className="text-amber-500" /> },
-  { name: "Docker", icon: <SiDocker className="text-amber-500" /> },
-  { name: "Git", icon: <SiGit className="text-amber-500" /> },
-  { name: "Postman", icon:<SiPostman className='text-amber-500' /> }
+const skillGroups = [
+  {
+    label: 'Backend',
+    items: ['Python', 'Django', 'FastAPI', 'Flask', 'REST APIs'],
+  },
+  {
+    label: 'Frontend',
+    items: ['React', 'Next.js', 'TypeScript', 'JavaScript', 'Tailwind CSS'],
+  },
+  {
+    label: 'Data & Infra',
+    items: ['PostgreSQL', 'MySQL', 'Docker', 'Git & GitHub'],
+  },
+  {
+    label: 'Tooling',
+    items: ['Postman', 'Swagger / OpenAPI', 'Framer Motion'],
+  },
 ];
 
-const Skills = () => {
+export default function Skills() {
   return (
-    <section className="py-12 px-4 bg-gradient-to-br from-purple-50/30 to-amber-50/30">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-left md:text-left">
-          <h2 className="text-3xl font-bold text-purple-700 mb-2 text-center md:text-left">
-            Skills & Tools
-          </h2>
-          <hr className="border-t-2 border-amber-500 w-40 mb-8 mx-auto md:mx-0" />
-        </div>
-        
-        <div className="flex flex-wrap justify-center md:justify-start gap-3">
-          {skills.map((skill) => (
-            <div
-              key={skill.name}
-              className="bg-white px-3 py-1.5 rounded-full shadow-sm border border-purple-100 hover:shadow-md transition-all duration-300 flex items-center gap-1.5 text-sm"
-            >
-              <div className="text-lg">
-                {skill.icon}
-              </div>
-              <span className="text-purple-800 font-medium">{skill.name}</span>
+    <section id="skills" className="py-24 border-t border-white/[0.10]">
+      <div className="max-w-4xl mx-auto px-6">
+
+        <p
+          className="text-[12px] tracking-[0.14em] uppercase text-[#8a8a85] mb-3"
+          style={{ fontFamily: 'var(--font-mono)' }}
+        >
+          Expertise
+        </p>
+        <h2
+          className="text-[clamp(32px,4vw,48px)] leading-[1.1] tracking-[-0.02em] italic text-[#edebe6] mb-16"
+          style={{ fontFamily: 'var(--font-serif)' }}
+        >
+          Skills &amp; tools
+        </h2>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
+          {skillGroups.map((group) => (
+            <div key={group.label}>
+              <p
+                className="text-[11px] tracking-[0.14em] uppercase text-[#8a8a85] mb-3 pb-2.5 border-b border-white/[0.10]"
+                style={{ fontFamily: 'var(--font-mono)' }}
+              >
+                {group.label}
+              </p>
+              <ul className="list-none p-0 m-0 flex flex-col gap-0.5">
+                {group.items.map((item) => (
+                  <li
+                    key={item}
+                    className="px-3 py-2.5 text-[15px] text-[#c4c2bc] rounded-sm transition-all duration-150 hover:bg-[#242424] hover:text-[#edebe6] cursor-default"
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
@@ -62,6 +61,4 @@ const Skills = () => {
       </div>
     </section>
   );
-};
-
-export default Skills;
+}
