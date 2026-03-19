@@ -86,26 +86,27 @@ const projects: Project[] = [
       "A server-rendered Django application using Django's template engine — a deliberate choice over a decoupled SPA for a content-heavy site.\n\nContent is managed through Django's built-in admin interface. Media files are stored and served via Cloudinary, keeping the deployment server lightweight. The booking form triggers an email notification on new submissions.",
     screenshot: "/images/bds.png"
   },
-  // {
-  //   id: "merch-visualizer",
-  //   name: "Merch Visualizer",
-  //   tagline: "Real-time 2D product customisation tool",
-  //   description:
-  //     "A web-based tool that lets users design and preview branded merchandise in real time — customising colours, text, and logo placement before ordering.",
-  //   stack: ["React", "TypeScript", "Tailwind CSS"],
-  //   links: [
-  //     {
-  //       label: "Live demo",
-  //       url: "https://bluediamondsolutions.org/services/graphics_design/visualizer/",
-  //     },
-  //   ],
-  //   problem:
-  //     "Clients ordering branded merchandise had difficulty communicating what they wanted — describing placement, colours, and sizing over email was slow and error-prone.\n\nThe visualizer lets clients configure a product themselves and see changes in real time, cutting the back-and-forth significantly.",
-  //   role:
-  //     "I designed and built the visualizer as a standalone React app embedded in the BlueDiamond site — responsible for the canvas rendering logic, customisation controls, and the export-to-image functionality.",
-  //   architecture:
-  //     "A React + TypeScript app with no backend dependency — all rendering happens client-side on an HTML Canvas element. Product templates are loaded as layered assets; customisations are applied as canvas transformations on top.\n\nState is managed with React hooks. The export uses Canvas API's toDataURL to generate a downloadable preview image.",
-  // },
+  {
+    id: "merch-visualizer",
+    name: "Merch Visualizer",
+    tagline: "Real-time 2D product customisation tool",
+    description:
+      "A web-based tool that lets users design and preview branded merchandise in real time — customising colours, text, and logo placement before ordering.",
+    stack: ["React", "TypeScript", "Tailwind CSS"],
+    links: [
+      {
+        label: "Live demo",
+        url: "https://bluediamondsolutions.org/services/graphics-design/visualizer/",
+      },
+    ],
+    problem:
+      "Clients ordering branded merchandise had difficulty communicating what they wanted — describing placement, colours, and sizing over email was slow and error-prone.\n\nThe visualizer lets clients configure a product themselves and see changes in real time, cutting the back-and-forth significantly.",
+    role:
+      "I designed and built the visualizer as a standalone React app embedded in the BlueDiamond site — responsible for the canvas rendering logic, customisation controls, and the export-to-image functionality.",
+    architecture:
+      "A React + TypeScript app with no backend dependency — all rendering happens client-side on an HTML Canvas element. Product templates are loaded as layered assets; customisations are applied as canvas transformations on top.\n\nState is managed with React hooks. The export uses Canvas API's toDataURL to generate a downloadable preview image.",
+    screenshot: "/images/merch-visualizer.png"
+  },
   {
     id: "retailbox-storefront",
     name: "RetailBox — Storefront",
