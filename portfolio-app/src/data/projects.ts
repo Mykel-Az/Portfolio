@@ -107,25 +107,25 @@ const projects: Project[] = [
       "A React + TypeScript app with no backend dependency — all rendering happens client-side on an HTML Canvas element. Product templates are loaded as layered assets; customisations are applied as canvas transformations on top.\n\nState is managed with React hooks. The export uses Canvas API's toDataURL to generate a downloadable preview image.",
     screenshot: "/images/merch-visualizer.png"
   },
-  {
-    id: "retailbox-storefront",
-    name: "RetailBox — Storefront",
-    tagline: "Out-of-the-box e-commerce webstore for RetailBox users",
-    description:
-      "An e-commerce storefront automatically generated from a RetailBox user's existing product catalogue — letting retail businesses go online instantly.",
-    stack: ["React", "Next.js", "Tailwind CSS"],
-    links: [
-      { label: "Live storefront", url: "https://storefront.retailbox.co" },
-      { label: "Website", url: "https://retailbox.co" },
-    ],
-    problem:
-      "RetailBox users manage inventory in the app but had no easy path to selling online. Setting up a separate store meant duplicating their catalogue and managing two disconnected systems.\n\nThe Storefront bridges that gap: each business gets a storefront automatically generated from their existing catalogue, with no extra setup.",
-    role:
-      "I built the Storefront as a Next.js application pulling product and business data from the RetailBox Engine API — covering page architecture, data fetching, product listing and detail views, and the cart flow.",
-    architecture:
-      "A Next.js app using server-side rendering for product pages, ensuring catalogue data is always fresh and pages are indexable by search engines.\n\nProduct data is fetched from the Engine API at request time, scoped to the specific business via subdomain. The cart is managed client-side with React context. Tailwind CSS provides a neutral design so the storefront suits any type of retail business.",
-    screenshot: "/images/retailbox-storefront.png"
-  },
+  // {
+  //   id: "retailbox-storefront",
+  //   name: "RetailBox — Storefront",
+  //   tagline: "Out-of-the-box e-commerce webstore for RetailBox users",
+  //   description:
+  //     "An e-commerce storefront automatically generated from a RetailBox user's existing product catalogue — letting retail businesses go online instantly.",
+  //   stack: ["React", "Next.js", "Tailwind CSS"],
+  //   links: [
+  //     { label: "Live storefront", url: "https://storefront.retailbox.co" },
+  //     { label: "Website", url: "https://retailbox.co" },
+  //   ],
+  //   problem:
+  //     "RetailBox users manage inventory in the app but had no easy path to selling online. Setting up a separate store meant duplicating their catalogue and managing two disconnected systems.\n\nThe Storefront bridges that gap: each business gets a storefront automatically generated from their existing catalogue, with no extra setup.",
+  //   role:
+  //     "I built the Storefront as a Next.js application pulling product and business data from the RetailBox Engine API — covering page architecture, data fetching, product listing and detail views, and the cart flow.",
+  //   architecture:
+  //     "A Next.js app using server-side rendering for product pages, ensuring catalogue data is always fresh and pages are indexable by search engines.\n\nProduct data is fetched from the Engine API at request time, scoped to the specific business via subdomain. The cart is managed client-side with React context. Tailwind CSS provides a neutral design so the storefront suits any type of retail business.",
+  //   screenshot: "/images/retailbox-storefront.png"
+  // },
 ];
 
 export default projects;
